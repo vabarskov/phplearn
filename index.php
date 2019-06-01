@@ -2,41 +2,11 @@
 $login = 'Aastor';
 $password = 1729;
 $showForm = true;
+include_once('header.php');
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="styles.css" rel="stylesheet">
-    <title>Project - ведение списков</title>
-</head>
 
-<body>
 
-    <div class="header">
-    	<div class="logo"><img src="i/logo.png" width="68" height="23" alt="Project"></div>
-        <div class="clearfix"></div>
-    </div>
 
-    <div class="clear">
-        <ul class="main-menu">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
-        </ul>
-    </div>
-
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-    	<tr>
-        	<td class="left-collum-index">
-			
-				<h1>Возможности проекта —</h1>
-				<p>Вести свои личные списки, например покупки в магазине, цели, задачи и многое другое. Делится списками с друзьями и просматривать списки друзей.</p>
-				
-			
-			</td>
             <?if($_GET['login'] == 'yes'):?>
             <td class="right-collum-index">
 				
@@ -84,20 +54,4 @@ $showForm = true;
                 <?endif;?>
 			</td>
             <?endif;?>
-        </tr>
-    </table>
-    
-    <div class="clearfix">
-        <ul class="main-menu bottom">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
-        </ul>
-    </div>
-
-    <div class="footer">&copy;&nbsp;<nobr>2018</nobr> Project.</div>
-
-</body>
-</html>
+<?include_once('footer.php');?>

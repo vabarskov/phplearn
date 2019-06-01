@@ -64,6 +64,12 @@ a:hover {
     padding: 0;
 }
 
+.main-menu li.active a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .main-menu.bottom {
     float: left;
 }
