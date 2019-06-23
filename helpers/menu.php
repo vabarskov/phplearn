@@ -1,7 +1,7 @@
 <?
 namespace menu;
 
-function MenuLinks($array) {
+function menuLinks($array) {
 	$str = '';
 	foreach ($array as $links) {
 		$str .= '<li';
@@ -11,7 +11,7 @@ function MenuLinks($array) {
 	return $str;
 }
 
-function MakeNormalArrayView($array, $direction = true) {
+function makeNormalArrayView($array, $direction = true) {
 	foreach ($array as $arItem) {
 		$newArray[$arItem['sort']] = $arItem;
 	}
@@ -24,11 +24,11 @@ function MakeNormalArrayView($array, $direction = true) {
 	return $newArray;
 }
 
-function GetMenu($array, $type = '') {
-	$menuSorted = MakeNormalArrayView($array);
+function getMenu($array, $vers = true, $type = '') {
+	$menuSorted = makeNormalArrayView($array, $vers);
 	$str = '<ul class="main-menu';
 	$str .= ($type) ? ' ' . $type . '">' : '">';
-	$str .= MenuLinks($array);
+	$str .= menuLinks($menuSorted);
 	$str .= '</ul>';
 	return $str;
 }

@@ -16,13 +16,13 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/included.php');
             <div class="clearfix"></div>
         </div>
         <div class="clear">
-            <?echo menu\GetMenu($menuLinks);?>
+            <?echo menu\getMenu($menuLinks);?>
         </div>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
                 <td class="left-collum-index">
                     
-                    <h1><?echo TitleFunctions\GetHeaderName($menuLinks);?></h1>
+                    <h1><?echo titleFunctions\getHeaderName($menuLinks);?></h1>
                     <p>Вести свои личные списки, например покупки в магазине, цели, задачи и многое другое. Делится списками с друзьями и просматривать списки друзей.</p>
                     
                     
